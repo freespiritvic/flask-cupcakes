@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Cupcakes</title>
+
+</head>
+<body>
+
+    
+
+    
+
+<div class="container">
+    <h1>Yummy Cupcakes</h1>
+    <ul id="cupcake-list">
+    </ul>
+<h2 class="text-center mt-3">Add a cupcake</h2>
+<form action="/api/cupcakes" method="post" id="cupcake-form">
+    <div class="form-group">   
+        <label for="flavor">Flavor</label>
+            <input type="text" name="flavor" id="flavor-input" class="form-control">
+    </div> 
+    <div class="form-group">
+        <label for="size">Size</label>
+            <input type="text" name="size" id="size-input" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="rating">Rating</label>
+            <input type="text" name="rating" id="rating-input" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="image">Image</label>
+            <input type="url" name="image" id="image-input" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary btn-md mt-2">Add</button>
+</form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/static/cupcakes.js"></script>
+</body>
+</html>
